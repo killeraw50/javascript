@@ -8,18 +8,18 @@
     <script>
         let n = prompt ("Length of Fibonacci Sequence");
         function fibonacciGenerator(n) {
-            let fibonacci = [];
             let x = 0;
             let y = 1;
+            let fibonacciSequence = [];
             for (let i = 0; i < n; i++) {
-                fibonacci.push(x);
-                z = x + y;
+                fibonacciSequence.push(x);
+                let z = x + y;
                 x = y;
                 y = z;
             }
-            alert (fibonacci);
+            return (fibonacciSequence);
         }
-        fibonacciGenerator(n);
+        alert (fibonacciGenerator(n));
     </script>
 </body>
 </html>
