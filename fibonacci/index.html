@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt ("Length of Fibonacci Sequence");
+        function fibonacciGenerator(n) {
+            let fibonacci = [];
+            let x = 0;
+            let y = 1;
+            for (let i = 0; i < n; i++) {
+                fibonacci.push(x);
+                z = x + y;
+                x = y;
+                y = z;
+            }
+            alert (fibonacci);
+        }
+        fibonacciGenerator(n);
+    </script>
+</body>
+</html>
